@@ -2,7 +2,7 @@ import NavBar from "./NavBar";
 import Banner from "./Banner";
 import Row from "./Row";
 import classes from "./HomeScreen.module.css";
-import requests from "../Api-Provider/Requests";
+import requests from "../../Api-Provider/Requests";
 function HomeScreen() {
   return (
     <div className={classes.home}>

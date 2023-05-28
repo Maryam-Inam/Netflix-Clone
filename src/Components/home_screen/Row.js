@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import classes from "./Row.module.css";
-import axios from "../Api-Provider/axios";
+import axios from "../../Api-Provider/axios";
 function Row({ title, fetchURL, isLargeRow = false }) {
   const baseURL = "https://image.tmdb.org/t/p/original";
   const [movies, setMovies] = useState([]);

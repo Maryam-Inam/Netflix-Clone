@@ -1,9 +1,14 @@
-
 .card {
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  background-color: white;
+}
+/* .card {
   padding: 80px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   background-color: rgb(153, 116, 116);
   color: rgb(249, 248, 248);
   width: 200px;
   height: 11rem;
-}
+} */

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import classes from "./Banner.module.css";
-import axios from "../Api-Provider/axios";
-import requests from "../Api-Provider/Requests";
+import axios from "../../Api-Provider/axios";
+import requests from "../../Api-Provider/Requests";
 function Banner() {
   const [movie, setMovie] = useState(null);
   const truncate = (string, n) => {
