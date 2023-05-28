@@ -1,0 +1,33 @@
+[debug] [2023-05-28T12:45:09.467Z] ----------------------------------------------------------------------
+[debug] [2023-05-28T12:45:09.477Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-05-28T12:45:09.478Z] CLI Version:   12.2.1
+[debug] [2023-05-28T12:45:09.479Z] Platform:      win32
+[debug] [2023-05-28T12:45:09.480Z] Node Version:  v20.2.0
+[debug] [2023-05-28T12:45:09.481Z] Time:          Sun May 28 2023 08:45:09 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-05-28T12:45:09.482Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-28T12:45:09.717Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-28T12:45:09.718Z] > authorizing via signed-in user (maryaminam00@gmail.com)
+[debug] [2023-05-28T12:45:09.718Z] [iam] checking project netflix-clone-3f3a3 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2023-05-28T12:45:09.722Z] > refreshing access token with scopes: []
+[debug] [2023-05-28T12:45:09.727Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-28T12:45:09.727Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-28T12:45:10.232Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-05-28T12:45:10.233Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-28T12:45:10.296Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-3f3a3:testIamPermissions [none]
+[debug] [2023-05-28T12:45:10.297Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-3f3a3:testIamPermissions x-goog-quota-user=projects/netflix-clone-3f3a3
+[debug] [2023-05-28T12:45:10.297Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-3f3a3:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2023-05-28T12:45:10.762Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-3f3a3:testIamPermissions 200
+[debug] [2023-05-28T12:45:10.763Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-3f3a3:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2023-05-28T12:45:10.766Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-3f3a3 [none]
+[debug] [2023-05-28T12:45:11.139Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-3f3a3 200
+[debug] [2023-05-28T12:45:11.140Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-3f3a3 {"projectId":"netflix-clone-3f3a3","projectNumber":"878357107734","displayName":"Netflix-clone","name":"projects/netflix-clone-3f3a3","resources":{"hostingSite":"netflix-clone-3f3a3","realtimeDatabaseInstance":"netflix-clone-3f3a3-default-rtdb"},"state":"ACTIVE","etag":"1_6fee91e4-ac83-474a-876c-677d861b944a"}
+[debug] [2023-05-28T12:45:11.141Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-3f3a3 [none]
+[debug] [2023-05-28T12:45:11.328Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-3f3a3 200
+[debug] [2023-05-28T12:45:11.329Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-3f3a3 {"projectId":"netflix-clone-3f3a3","projectNumber":"878357107734","displayName":"Netflix-clone","name":"projects/netflix-clone-3f3a3","resources":{"hostingSite":"netflix-clone-3f3a3","realtimeDatabaseInstance":"netflix-clone-3f3a3-default-rtdb"},"state":"ACTIVE","etag":"1_6fee91e4-ac83-474a-876c-677d861b944a"}
+[info] 
+[info] === Deploying to 'netflix-clone-3f3a3'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2023-05-28T12:45:11.346Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/netflix-clone-3f3a3/locations/-/instances/netflix-clone-3f3a3-default-rtdb [none]
