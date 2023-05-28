@@ -69,6 +69,7 @@
     font-size: 1rem;
     background-color: #e50914;
     color: #fff;
+    cursor: pointer;
 }
 .plan_contents:hover{
     opacity: 1;
